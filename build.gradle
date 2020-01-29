@@ -183,6 +183,7 @@ dependencies {
     testImplementation 'com.github.tomjankes:wiremock-groovy:0.2.0'
     testImplementation 'org.apache.camel:camel-test-spring:2.24.3'
     testImplementation 'com.nhaarman:mockito-kotlin-kt1.1:1.6.0'
+    testImplementation "org.testcontainers:localstack:1.12.3"
 
     compile configurations.agentDeps
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
