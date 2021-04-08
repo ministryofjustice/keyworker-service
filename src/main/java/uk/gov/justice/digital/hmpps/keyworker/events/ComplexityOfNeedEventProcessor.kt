@@ -32,7 +32,7 @@ class ComplexityOfNeedEventProcessor(
   }
 
   fun onComplexityChange(message: String) {
-    if (StringUtils.isNullOrEmpty(complexityOfNeedUri)) {
+    if (complexityOfNeedUri.isNullOrEmpty()) {
       log.info("Skipping complexity of need event because it's not enabled")
       return
     }
